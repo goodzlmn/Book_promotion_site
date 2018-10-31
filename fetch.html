@@ -1,0 +1,12 @@
+<html>
+	<body>
+		<article></article>
+		<input type="button" value="Fetch" onclick="
+			fetch('css').then(function(response){
+				response.text().then(function(text){
+					document.querySelector('article').innerHTML = text;
+				})
+			})
+		">
+	</body>
+</html>
